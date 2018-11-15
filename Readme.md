@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
+* [Orders.aspx](./CS/Orders.aspx) (VB: [Orders.aspx](./VB/Orders.aspx))
+* [Orders.aspx.cs](./CS/Orders.aspx.cs) (VB: [Orders.aspx](./VB/Orders.aspx))
+<!-- default file list end -->
 # ASPxCardView - How to display detail data within a popup window
 
 
