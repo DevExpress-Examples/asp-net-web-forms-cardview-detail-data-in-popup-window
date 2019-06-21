@@ -7,6 +7,9 @@
 * [Orders.aspx.cs](./CS/Orders.aspx.cs) (VB: [Orders.aspx.vb](./VB/Orders.aspx.vb))
 <!-- default file list end -->
 # ASPxCardView - How to display detail data within a popup window
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t339685/)**
+<!-- run online end -->
 
 
 This example contains a Customers grid with a hyperlink column. When the hyperlink is clicked, a popup window is opened to display detail data - orders - of a given customer. Orders is a separate web page embedded in the ASPxPopupControl via the client-side SetContentUrl method.<br><br><strong>See also:</strong><br><a href="https://www.devexpress.com/Support/Center/Example/Details/T272616">How to display master-detail data using two ASPxCardView controls</a><br><a href="https://www.devexpress.com/Support/Center/Example/Details/T339546">ASPxCardView - How to display master-detail tables in two grids on separate tabs of a PageControl</a>
