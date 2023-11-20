@@ -13,8 +13,7 @@
     <div>
         <dx:ASPxCardView ID="ASPxCardView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="OrderID">
             <Columns>
-                <dx:CardViewTextColumn FieldName="OrderID" Visible="False"/>
-                <dx:CardViewTextColumn FieldName="CustomerID" />
+                <dx:CardViewTextColumn FieldName="OrderID" />
                 <dx:CardViewDateColumn FieldName="OrderDate" />
             </Columns>
         </dx:ASPxCardView>
