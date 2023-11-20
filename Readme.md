@@ -8,7 +8,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/t339685/)**
 <!-- run online end -->
 
-In this example, ASPxCardView contains a hyperlink column. 
+In this example, [ASPxCardView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCardView) contains a hyperlink column. 
 
 ```aspx
 <dx:CardViewHyperLinkColumn FieldName="CustomerID" >
@@ -16,7 +16,7 @@ In this example, ASPxCardView contains a hyperlink column.
 </dx:CardViewHyperLinkColumn>
 ```
 
-When a hyperlink is clicked, a popup window is opened to display detail data - orders of the current customer. The [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method specifies the web page ([Orders.aspx](./CS/Orders.aspx)) and query paramenter (customer ID) to be displayed in the window.
+When a user clicks a hyperlink, a popup window is opened to display detail data - orders of the current customer. The [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method specifies the web page ([Orders.aspx](./CS/Orders.aspx)) to be displayed in the window and the query paramenter (`customerID`) to select data from the data base.
 
 ```jscript
 function ShowDetailPopup(customerID) {
