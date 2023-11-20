@@ -19,25 +19,19 @@
     <div>
         <dx:ASPxCardView ID="ASPxCardView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="CustomerID">
             <Columns>
-                <dx:CardViewTextColumn FieldName="CompanyName" VisibleIndex="2">
-                </dx:CardViewTextColumn>
-                <dx:CardViewTextColumn FieldName="ContactName" VisibleIndex="3">
-                </dx:CardViewTextColumn>
-                <dx:CardViewTextColumn FieldName="City" VisibleIndex="4">
-                </dx:CardViewTextColumn>
-                <dx:CardViewHyperLinkColumn FieldName="CustomerID" ReadOnly="True" VisibleIndex="0">
-                    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');"
-                        Text="Show Orders">
-                    </PropertiesHyperLinkEdit>
+                <dx:CardViewHyperLinkColumn FieldName="CustomerID" >
+                    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" Text="Show Orders" />
                 </dx:CardViewHyperLinkColumn>
+                <dx:CardViewTextColumn FieldName="CompanyName" />
+                <dx:CardViewTextColumn FieldName="ContactName" />
+                <dx:CardViewTextColumn FieldName="City" />
             </Columns>
         </dx:ASPxCardView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\nwind.mdb;Persist Security Info=True" ProviderName="System.Data.OleDb" SelectCommand="SELECT [CustomerID], [CompanyName], [ContactName], [City] FROM [Customers]"></asp:SqlDataSource>
         <dx:ASPxPopupControl ID="ASPxPopupControl1" ClientInstanceName="popup" Width="800px" Height="400px" runat="server">
             <ContentCollection>
-                <dx:PopupControlContentControl ID="PopupControlContentControl1" runat="server"></dx:PopupControlContentControl>
+                <dx:PopupControlContentControl ID="PopupControlContentControl1" runat="server" />
             </ContentCollection>
-
         </dx:ASPxPopupControl>
     </div>
     </form>
