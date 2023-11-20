@@ -12,7 +12,7 @@ In this example, [ASPxCardView](https://docs.devexpress.com/AspNet/DevExpress.We
 
 ```aspx
 <dx:CardViewHyperLinkColumn FieldName="CustomerID" >
-    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" Text="Show Orders" />
+    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" />
 </dx:CardViewHyperLinkColumn>
 ```
 
@@ -21,6 +21,7 @@ When a user clicks a hyperlink, a popup window is opened to display detail data 
 ```jscript
 function ShowDetailPopup(customerID) {
     popup.SetContentUrl('Orders.aspx?id=' + customerID);
+    popup.SetHeaderText(customerID);
     popup.Show();
 }
 ```
