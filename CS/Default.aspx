@@ -10,6 +10,7 @@
     <script type="text/javascript">
         function ShowDetailPopup(customerID) {
             popup.SetContentUrl('Orders.aspx?id=' + customerID);
+            popup.SetHeaderText(customerID);
             popup.Show();
         }
     </script>
@@ -20,7 +21,7 @@
         <dx:ASPxCardView ID="ASPxCardView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="CustomerID">
             <Columns>
                 <dx:CardViewHyperLinkColumn FieldName="CustomerID" >
-                    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" Text="Show Orders" />
+                    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" />
                 </dx:CardViewHyperLinkColumn>
                 <dx:CardViewTextColumn FieldName="CompanyName" />
                 <dx:CardViewTextColumn FieldName="ContactName" />
