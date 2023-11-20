@@ -13,12 +13,9 @@
     <div>
         <dx:ASPxCardView ID="ASPxCardView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" KeyFieldName="OrderID">
             <Columns>
-                <dx:CardViewTextColumn FieldName="OrderID" ReadOnly="True" Visible="False">
-                </dx:CardViewTextColumn>
-                <dx:CardViewTextColumn FieldName="CustomerID" VisibleIndex="0">
-                </dx:CardViewTextColumn>
-                <dx:CardViewDateColumn FieldName="OrderDate" VisibleIndex="1">
-                </dx:CardViewDateColumn>
+                <dx:CardViewTextColumn FieldName="OrderID" Visible="False"/>
+                <dx:CardViewTextColumn FieldName="CustomerID" />
+                <dx:CardViewDateColumn FieldName="OrderDate" />
             </Columns>
         </dx:ASPxCardView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\nwind.mdb;Persist Security Info=True" 
