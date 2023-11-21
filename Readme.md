@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Card View for ASP.NET Web Forms - How to display detail data in a popup window
+# Card View for ASP.NET Web Forms - How to display detail data in a pop-up window
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/t339685/)**
 <!-- run online end -->
