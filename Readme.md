@@ -1,29 +1,32 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128530163/15.2.4%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T339685)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
-* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
-* [Orders.aspx](./CS/Orders.aspx) (VB: [Orders.aspx](./VB/Orders.aspx))
-* [Orders.aspx.cs](./CS/Orders.aspx.cs) (VB: [Orders.aspx.vb](./VB/Orders.aspx.vb))
-<!-- default file list end -->
-# ASPxCardView - How to display detail data within a popup window
+# Card View for ASP.NET Web Forms - How to display detail data in a pop-up window
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/t339685/)**
 <!-- run online end -->
 
+In this example, [ASPxCardView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCardView) contains a hyperlink column. 
 
-This example contains a Customers grid with a hyperlink column. When the hyperlink is clicked, a popup window is opened to display detail data - orders - of a given customer. Orders is a separate web page embedded in the ASPxPopupControl via the client-side SetContentUrl method.<br><br><strong>See also:</strong><br><a href="https://www.devexpress.com/Support/Center/Example/Details/T272616">How to display master-detail data using two ASPxCardView controls</a><br><a href="https://www.devexpress.com/Support/Center/Example/Details/T339546">ASPxCardView - How to display master-detail tables in two grids on separate tabs of a PageControl</a>
+```aspx
+<dx:CardViewHyperLinkColumn FieldName="CustomerID" >
+    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');" />
+</dx:CardViewHyperLinkColumn>
+```
 
+When a user clicks a hyperlink, a pop-up window opens that displays detail data: orders of the current customer. The [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method specifies the web page ([Orders.aspx](./CS/Orders.aspx)) to be displayed in the window and the query parameter (`customerID`) to select data from the database.
 
-<h3>Description</h3>
+```jscript
+function ShowDetailPopup(customerID) {
+    popup.SetContentUrl('Orders.aspx?id=' + customerID);
+    popup.SetHeaderText(customerID);
+    popup.Show();
+}
+```
 
-&nbsp;
+## Files to Review
 
-<br/>
-
-
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
+* [Orders.aspx](./CS/Orders.aspx) (VB: [Orders.aspx](./VB/Orders.aspx))
