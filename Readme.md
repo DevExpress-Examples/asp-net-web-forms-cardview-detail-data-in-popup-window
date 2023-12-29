@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Card View for ASP.NET Web Forms - How to display detail data in a pop-up window
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128530163/)**
-<!-- run online end -->
 
 In this example, [ASPxCardView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCardView) contains a hyperlink column. 
 
